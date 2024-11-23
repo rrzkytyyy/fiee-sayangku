@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fce4ec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #d81b60;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    font-weight: bold;
+    animation: fadeIn 2s ease-out;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    color: #d81b60;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #f8bbd0;
+}
+
+button:active {
+    background-color: #ec407a;
+}
+
+.heart {
+    font-size: 100px;
+    color: #fff;
+    animation: pulse 1.5s infinite;
+}
+
+.decorative-heart {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.decorative-heart span {
+    color: #fff;
+    padding: 5px;
+    animation: heartbeat 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
